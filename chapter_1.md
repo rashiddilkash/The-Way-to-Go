@@ -20,7 +20,7 @@ Go belongs to the C-family, like C++, Java, and C#, and is inspired by many othe
 
 Go has the features of a dynamic language, so Python and Ruby programmers feel more comfortable with it.
 
-images/image.png
+![influence]images/image.png
 
 ## Why a new language?
 
@@ -44,9 +44,9 @@ The main target of Golang’s design was to combine the efficacy, speed, and saf
 
 Some other targets that Go was meant to meet were:
 
-Support for network communication, concurrency, and parallelization
-Support for excellent building speed
-Support for memory management
+1. Support for network communication, concurrency, and parallelization
+2. Support for excellent building speed
+3. Support for memory management
 
 ### Support for network communication, concurrency, and parallelization
 
@@ -78,23 +78,23 @@ Some features of modern OOP languages were intentionally left out. Because, obje
 
 As per the decision made by the Go-team, the following OOP features are missing from Golang.
 
-To simplify the design, no function or operator overloading was added.
+1. To simplify the design, no function or operator overloading was added.
 
-Implicit conversions were excluded to avoid the many bugs and confusion arising from this in languages like C/C++.
+2. Implicit conversions were excluded to avoid the many bugs and confusion arising from this in languages like C/C++.
 
-No classes and type inheritance is supported in Golang.
+3. No classes and type inheritance is supported in Golang.
 
-Golang does not support variant types. However, almost the same functionality is realized through interfaces.
+4. Golang does not support variant types. However, almost the same functionality is realized through interfaces.
 
-Dynamic code loading and dynamic libraries are excluded.
+5. Dynamic code loading and dynamic libraries are excluded.
 
-Generics are not included (but this is a possible feature for Go 2.0).
+6. Generics are not included (but this is a possible feature for Go 2.0).
 
-Exceptions are not included (although recover/panic often goes in that direction).
+7. Exceptions are not included (although recover/panic often goes in that direction).
 
-Assertions are not included.
+8. Assertions are not included.
 
-Immutable (unable to change) variables are excluded.
+9. Immutable (unable to change) variables are excluded.
 
 Golang is a functional language, meaning that functions are the basic building blocks, and their use is very versatile.
 
