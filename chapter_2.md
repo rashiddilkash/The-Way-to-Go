@@ -10,7 +10,7 @@ Go source code is stored in .go files. Their filenames consist of lowercase-lett
 
 A reserved word, with a special meaning in a programming language, is called a keyword. Below is the set of 25 keywords, or reserved words, used in Go-code:
 
-[!Keywords](images/keywords.jpg)
+![Keywords](images/keywords.jpg)
 
 ### Identifiers
 
@@ -22,7 +22,7 @@ The following are NOT valid identifiers:
 - case because it is a keyword in Go
 - a+b because operators are not allowed
 
-[!Predeclared Identifiers](images/predeclared_identifiers.jpg)
+![Predeclared Identifiers](images/predeclared_identifiers.jpg)
 
 #### Blank identifier
 
