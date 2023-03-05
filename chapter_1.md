@@ -20,7 +20,7 @@ Go belongs to the C-family, like C++, Java, and C#, and is inspired by many othe
 
 Go has the features of a dynamic language, so Python and Ruby programmers feel more comfortable with it.
 
-![influence]images/image.png
+![influence]images/image.jpg
 
 ## Why a new language?
 
