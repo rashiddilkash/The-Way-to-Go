@@ -1,4 +1,4 @@
-# Origin and Evolution of Go
+## Origin and Evolution of Go
 
 # Introduction
 
@@ -12,7 +12,7 @@ Since 2012, Go has grown from version 1.1 to 1.12 (March 2019), and work for Go 
 
 In 2009 and again in 2016, Go was pronounced language of the year by Tiobe
 
-# Reasons for Developing Go
+## Reasons for Developing Go
 
 # Languages that influenced Go
 
@@ -68,7 +68,7 @@ The entire Go standard library compiles in less than 20 seconds. Typical project
 
 Because memory problems (memory leaks) are a long-time problem of C++, Go’s designers decided that memory management should not be the responsibility of a developer. So although Go executes native code, it runs in a small runtime, which takes care of an efficient and fast garbage collection. Go also has a built-in runtime reflection capability.
 
-# Characteristics of Go
+## Characteristics of Go
 
 # Features of Go
 
