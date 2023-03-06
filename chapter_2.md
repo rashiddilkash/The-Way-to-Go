@@ -80,24 +80,32 @@ The package is compiled as a unit, and by convention, each directory contains on
 
 A Go program is created by linking set of packages together, with the import keyword. For example, if you want to import a package say fmt, then you do:
 
+```
 package main
 import "fmt"
+```
 
 import "fmt" tells Go that this program needs functions, or other elements from the package fmt, which implements a functionality for formatted IO. The package names are enclosed within " ".
 
 Import loads the public declarations from the compiled package; it does not insert the source code. If multiple packages are needed, they can each be imported by a separate statement.
 
+```
 import "fmt"
 import "os"
+```
 
+```
 import "fmt"; import "os"
+```
 
 Go has provided us with a shorter and more elegant way of importing multiple packages known as factoring the keyword.
 
+```
 import (
 "fmt"
 "os"
 )
+```
 
 Factoring means calling a keyword once on multiple instances. You may have noticed that we imported two packages using a single import keyword. It is also applicable to keywords like const, var, and type.
 
@@ -118,13 +126,17 @@ Importing a package gives access only to the exported objects in that package. S
 
 Importing a package gives access only to the exported objects in that package. Suppose we have an instance of a variable or a function called Object (starts with O so it is exported) in a package pack1. When pack1 is imported in the current package, Object can be called with the usual dot-notation from OO-languages:
 
+```
 pack1.Object
+```
 
 Packages also serve as namespaces and can help us avoid name-conflicts. For example, variables with the same name in two packages are differentiated by their package name, like pack1.Object and pack2.Object.
 
 A package can also be given another name called an alias. If you name a package then its alias will be used throughout the code, rather than its original name. For example:
 
+```
 import fm "fmt"
+```
 
 Now in the code, whenever you want to use fmt, use its alias:fm (not fmt).
 
@@ -138,7 +150,9 @@ That’s how functionalities are imported in the Golang.
 
 The simplest function declaration has the format:
 
+```
 func functionName()
+```
 
 Between the mandatory parentheses ( ) no, one, or more parameters (separated by ,) can be given as input to the function. After the name of each parameter variable must come its type.
 
@@ -146,39 +160,51 @@ The main function as a starting point is required (usually the first function), 
 
 The code or body in functions is enclosed between braces { }. The first { must be on the same line as the declaration otherwise you get the error: syntax error: unexpected semicolon or newline before { ). The last } is positioned after the function-code in the column beneath the function. The syntax is as follows:
 
+```
 func func_Name(param1 type1, param2 type2, ...){
 ...
 }
+```
 
 If the function is returning an object of type type1, we follow the syntax as:
 
+```
 func func_Name(param1 type1, param2 type2, ...) type1 {
 ...
 }
+```
 
 or :
 
+```
 func func_Name(param1 type1, param2 type2, ...) ret1 type1 {
 ...
 }
+```
 
 where ret1 is a variable of type type1 to be returned. So a general function returning multiple variables looks like:
 
+```
 func func_Name(param1 type1, param2 type2, ...) (ret1 type1, ret2 type2, ...) {
 ...
 }
+```
 
 Smaller functions can be written on one line like:
 
+```
 func Sum(a, b int) int { return a + b }
+```
 
 Let’s create the main function now as an entry point.
 
+```
 package main
 import "fmt"
 
 func main(){
 }
+```
 
 The main structure of a Go program is ready.
 
